@@ -22,23 +22,16 @@ In the recent days, the social networking media has been widely used by more and
 
 \section{Purpose}
 
-------a statement of the problem to be addressed. This should include arguments as to why solving the problem is important; e.g., because it will enable certain applications, or lead to interesting scientific discoveries.
+-a statement of the problem to be addressed. This should include arguments as to why solving the problem is important; e.g., because it will enable certain applications, or lead to interesting scientific discoveries.
 
 
 Twitter is a popular real-time information network that users can present and find the latest ideas, stories, news and opinions on what they interested. For example, when the news the pop star Michael Jackson's death came out, 22.64\% of the tweets posted contains the phrase "Michael Jackson", which enables the detection of the current hot events promptly. 
 
 
 New event detection includes topic detection and tracking. 
-'A story is a topically cohesive segment of news that includes two or more declarative independent clauses about a single event.'
-'Given a sequence of stories, the goal of FSD is to identify the ﬁrst story to discuss a particular event. In this context, an event is taken to be something that happens at some specific time and place, e.g., an earthquake striking the town of L’Aquila in Italy on April 6th 2009. '
 
 
 
- "First Story Detection" deals with spotting breaking news. For example, as soon as an earthquake happens, we want to know about it. We do not care about follow-up stories. Now, Twitter can be an excellent source of first stories and we have shown how they can be spotted using scalable algorithms based upon locality sensitive hashing. However, our system only works on a single processor and is not real-time.
-
-S4 (the "real time hadoop" by Yahoo) is a distributed processing system which spreads computation over a network of machines. Tasks communicate with each other via remote procedure calls (there is no use of disks) using key-value pairs. Because of this, processing is scalable and fast. S4 is written in java.
-
-This project will look at how S4 can be used for First Story Detection in Twitter. Tweets will be provided. The focus here will be on investigating how to design such a system, looking at questions such as throughput rate, robustness and scaling and how
 
 
 
@@ -64,6 +57,33 @@ This project will look at how S4 can be used for First Story Detection in Twitte
 
 
 Locality-sensitive hashing
+
+
+ZooKeeper is a distributed, open-source coordination service which allows distributed processes to coordinate with each other through a shared hierarchal namespace which is organized similarly to a standard file system.  
+ZooKeeper data is kept in-memory, which means ZooKeeper can achieve high throughput and low latency numbers.
+
+
+S4 is a general-purpose, distributed, scalable, pluggable platform that used for processing continuous unbounded streams of data. 
+
+
+
+In S4, Events are arbitrary Java Objects that can be passed between PEs. Adapters convert the external incoming data streams into Events and then dispatched in named streams which identified by a key stream name.
+
+Keyed data events are routed with affinity to Processing Elements (PEs), which consume the events and emit one or more events which may be consumed by other PEs, or publish results, possibly to an external data store or consumer.
+
+Processing Nodes (PNs) are the logical host to PEs which are responsible for listening to events, executing operations on the incoming events, dispatching events with the help of the communication layer, and emitting output events. 
+
+Key-less PEs usually serve as entry point PEs: That is, the PEs that receive events from the outside world. This is because an adapter typically does not choose an S4 node based on a key in the event, but randomly (or in some other fashion that evenly distributes the events amongst the S4 nodes).
+
+We will define a PE type called TweetReceiverPE which is configured to listen to the tweets stream. 
+
+
+
+-------------
+
+In the context of first story detection, we can not store all the tweets in the memory nor compare the new tweets to all the existed tweets. Therefore, for an unbounded tweets streaming, the streaming FSD system should detect the tweet's topic and then make decisions whether the topic is seen before or a new one and then process the next tweet. 
+
+
 
 
 
