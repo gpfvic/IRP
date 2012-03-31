@@ -1,47 +1,46 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.6)
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: irp.aux
 The style file: plain.bst
-I found no \citation commands---while reading file irp.aux
 Database file #1: refs.bib
-You've used 0 entries,
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3983 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            513 strings with 4528 characters,
+and the built_in function-call counts, 1053 in all, are:
+= -- 108
+> -- 41
+< -- 2
++ -- 16
+- -- 14
+* -- 69
+:= -- 155
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 2
+duplicate$ -- 48
+empty$ -- 83
+format.name$ -- 14
+if$ -- 241
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 16
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 11
 quote$ -- 0
-skip$ -- 1
+skip$ -- 42
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 75
+swap$ -- 23
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 8
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 9
+width$ -- 3
+write$ -- 27

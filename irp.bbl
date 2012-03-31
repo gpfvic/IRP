@@ -1,3 +1,17 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{5693297}
+L.~Neumeyer, B.~Robbins, A.~Nair, and A.~Kesari.
+\newblock S4: Distributed stream computing platform.
+\newblock In {\em Data Mining Workshops (ICDMW), 2010 IEEE International
+  Conference on}, pages 170 --177, dec. 2010.
+
+\bibitem{Petrovic:2010}
+Sa\v{s}a Petrovi\'{c}, Miles Osborne, and Victor Lavrenko.
+\newblock Streaming first story detection with application to twitter.
+\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  HLT '10, pages 181--189, Stroudsburg, PA, USA, 2010. Association for
+  Computational Linguistics.
 
 \end{thebibliography}
