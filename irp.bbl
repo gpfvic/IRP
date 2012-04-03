@@ -1,5 +1,23 @@
 \begin{thebibliography}{1}
 
+\bibitem{Allan:2002:TDT:772260}
+James Allan, editor.
+\newblock {\em Topic detection and tracking: event-based information
+  organization}.
+\newblock Kluwer Academic Publishers, Norwell, MA, USA, 2002.
+
+\bibitem{212975}
+Bruce Croft, Donald Metzler, and Trevor Strohman.
+\newblock {\em Search Engines: Information Retrieval in Practice}.
+\newblock Addison Wesley, 1 edition, February 2009.
+
+\bibitem{Nallapati:2004:ETW:1031171.1031258}
+Ramesh Nallapati, Ao~Feng, Fuchun Peng, and James Allan.
+\newblock Event threading within news topics.
+\newblock In {\em Proceedings of the thirteenth ACM international conference on
+  Information and knowledge management}, CIKM '04, pages 446--453, New York,
+  NY, USA, 2004. ACM.
+
 \bibitem{5693297}
 L.~Neumeyer, B.~Robbins, A.~Nair, and A.~Kesari.
 \newblock S4: Distributed stream computing platform.
@@ -13,5 +31,12 @@ Sa\v{s}a Petrovi\'{c}, Miles Osborne, and Victor Lavrenko.
   the North American Chapter of the Association for Computational Linguistics},
   HLT '10, pages 181--189, Stroudsburg, PA, USA, 2010. Association for
   Computational Linguistics.
+
+\bibitem{Yang:1998:SRO:290941.290953}
+Yiming Yang, Tom Pierce, and Jaime Carbonell.
+\newblock A study of retrospective and on-line event detection.
+\newblock In {\em Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}, SIGIR '98,
+  pages 28--36, New York, NY, USA, 1998. ACM.
 
 \end{thebibliography}
